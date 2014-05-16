@@ -36,7 +36,7 @@ function settargmac() {
 #check help
 if [ "$1" = -h ]
    then
-      echo "Usage: nuke $n $target (if none, target entire network)"
+      echo "Usage: nuke $m $target (if none, target entire network)"
 fi
 
 #check for single target
@@ -48,7 +48,7 @@ fi
 
 #check if needs to redirect traffic to another mac (m)
 ngatw=F0:01:ED:00:B0:0B
-if [ "$1" = n ]
+if [ "$1" = m ]
    then
       ngatw=C8:3A:35:DB:CE:4E
 fi
