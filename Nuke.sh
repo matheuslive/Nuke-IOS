@@ -46,7 +46,7 @@ if [ "$2" != "" ]
       settargmac
 fi
 
-#check if needs to redirect to netbook (n)
+#check if needs to redirect traffic to another mac (m)
 ngatw=F0:01:ED:00:B0:0B
 if [ "$1" = n ]
    then
