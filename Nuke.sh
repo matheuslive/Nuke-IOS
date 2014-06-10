@@ -57,7 +57,7 @@ echo ===========================================================================
 
 #get GW ip
 gatw=`netstat -rn | grep default | cut -c20-35`
-echo Gateway padrão: $gatw
+echo Default Gateway: $gatw
 
 #get GW mac
 mac=`arp -n $gatw | cut -f4 -d' '`
@@ -68,7 +68,7 @@ sed "s/^\(.\):/0\1:/" | \
 sed "s/:\(.\):/:0\1:/g" | \
 sed "s/:\(.\):/:0\1:/g" | \
 sed "s/:\(.\)$/:0\1/"`
-echo MAC addr do Gateway: $mac
+echo Gateway MAC Address: $mac
 echo =============================================================================
 echo
 
