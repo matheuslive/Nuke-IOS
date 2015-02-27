@@ -31,12 +31,16 @@ function settargmac() {
 }
 
 
-# CHECK PARAMETERS
+# CHECK PARAMETERS (change to case!)
 
 #check help
-if [ "$1" = -h ]
-   then
+if [ "$1" = -h ] then
       echo "Usage: nuke $m $target (if none, target entire network)"
+fi
+
+#check daemon
+if [ "$1" = -d ] then
+      #gibertoni gay
 fi
 
 #check for single target
